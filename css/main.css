@@ -16,13 +16,22 @@
 
 .mainrow {
   background-color: red;
-  padding-bottom: 1rem;
+  padding: 1rem;
   margin-bottom: 2rem;
+  height: auto;
 }
 
 .subrow {
   background-color: blue;
   margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.techlogo {
+  height: 8rem;
+  width: auto;
+  float: left;
+  padding: 1rem 1rem 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
