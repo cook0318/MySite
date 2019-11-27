@@ -6,6 +6,7 @@
 .jumbotron{
     min-height: 40vh;
     text-align: center;
+    background-image: url(https://picsum.photos/id/434/1600/550);
 }
 
 // can put this inside the above jumbotron with sass later
@@ -15,14 +16,16 @@
     margin-right:auto;
 }
 .mainrow{
-    background-color: red;
+    background-color: hsl(240, 100%, 85%);
+    border: 2px solid hsl(240, 100%, 50%);
     padding: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     height: auto;
 }
 .subrow{
-    background-color:blue;
-    margin-bottom: 1rem;
+    background-color: hsl(240, 100%, 95%);
+    border: 2px solid hsl(240, 100%, 70%);
+    margin-bottom: 0.5rem;
     padding: 1rem;
 }
 .techlogo{
@@ -30,4 +33,29 @@
     width: auto;
     float: left;
     padding: 1rem 1rem 1rem;
+}
+
+.techgroup{
+    margin-bottom: 2rem;
+}
+.jumbotext{
+    color: white;
+    font-weight: 400;
+    text-shadow: 2px 3px 2px hsl(0, 0%, 30%);
+}
+.desc{
+    font-size:1.25rem;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link{
+    padding-right: 5rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: 2px solid black;
+}
+
+.footer p{
+    padding:1rem;
+    margin: 0rem;
+    text-align: right;
 }

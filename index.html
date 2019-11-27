@@ -10,153 +10,174 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
-            <a class="navbar-brand" href="#">BC logo</a>
+            <a class="navbar-brand" href="index.html">BC logo</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">=</span>
+                <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- on hover, make links fill into new color same as border. or exact opposite of border-->
             <div class="collapse navbar-collapse" id="myNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
     </nav>
     <div class="jumbotron">
         <img class="myLogo" src="pics/logo.jpg">
-        <h1 class="display-1">Billy Cook</h1>
+        <h1 class="display-1 jumbotext">Billy Cook</h1>
         <!-- should make 'welcome to my site' blur in maybe -->
-        <p class="display-4">Welcome to my site.</p>
+        <p class="display-4 jumbotext">Welcome to my site.</p>
+        <p class="jumbotext desc">Below you'll find a list of languages and technologies I have learned while studying at Algonquin College.</p>
+
     </div>
     <div class="container">
 
-        <div class="row mainrow">
-            <div class="col">
-                <img class="techlogo" src="pics/html.svg" alt="HTML5 logo">
-                <h1>HTML</h1>
-                <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem esse ab minus dolor maiores cumque nemo. Necessitatibus quos atque assumenda sunt at dolorum similique suscipit dolore beatae, maxime animi.</p>
+        <div class="techgroup">
+            <div class="row mainrow">
+                <div class="col">
+                    <img class="techlogo" src="pics/html.svg" alt="HTML5 logo">
+                    <h1>HTML</h1>
+                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem esse ab minus dolor maiores cumque nemo. Necessitatibus quos atque assumenda sunt at dolorum similique suscipit dolore beatae, maxime animi.</p>
+                </div>
             </div>
         </div>
 
-        <div class="row mainrow">
-            <div class="col">
-                <img class="techlogo" src="pics/css.svg" alt="CSS logo">
-                <h1>CSS</h1>
-                <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo perferendis ex officiis cum doloremque delectus accusamus voluptatum, dicta magni deserunt consectetur labore, iste est nostrum minima debitis vel sequi inventore!</p>
+        <div class="techgroup">
+            <div class="row mainrow">
+                <div class="col">
+                    <img class="techlogo" src="pics/css.svg" alt="CSS logo">
+                    <h1>CSS</h1>
+                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo perferendis ex officiis cum doloremque delectus accusamus voluptatum, dicta magni deserunt consectetur labore, iste est nostrum minima debitis vel sequi inventore!</p>
+                </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col-2">
-                    <p></p>
-            </div>
-            <div class="col-10 subrow">
-                <img class="techlogo" src="pics/sass.svg" alt="SASS logo">
-                <h1>SASS</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem esse ab minus dolor maiores cumque nemo. Necessitatibus quos atque assumenda sunt at dolorum similique suscipit dolore beatae, maxime animi.</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-2">
-                    <p></p>
-            </div>
-            <div class="col-10 subrow">
-                <img class="techlogo" src="pics/boot.png" alt="Bootstrap logo">
-                <h1>Bootstrap</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem esse ab minus dolor maiores cumque nemo. Necessitatibus quos atque assumenda sunt at dolorum similique suscipit dolore beatae, maxime animi.</p>
-            </div>
-        </div>
-
-        <div class="row mainrow">
-            <div class="col">
-                <img class="techlogo" src="pics/js.svg" alt="Javascript logo">
-                <h1>Javascript</h1>
-                <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem esse ab minus dolor maiores cumque nemo. Necessitatibus quos atque assumenda sunt at dolorum similique suscipit dolore beatae, maxime animi.</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-2">
-                <p></p>
-            </div>
-            <div class="col-10 subrow">
-                <img class="techlogo" src="pics/jq.png" alt="J Query logo">
-                <h1>jQuery</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem esse ab minus dolor maiores cumque nemo. Necessitatibus quos atque assumenda sunt at dolorum similique suscipit dolore beatae, maxime animi.</p>
-            </div>
-        </div>
-
-        <div class="row mainrow">
-            <div class="col">
-                <img class="techlogo" src="pics/py.png " alt="Python logo">
-                <h1>Python</h1>
-                <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem esse ab minus dolor maiores cumque nemo. Necessitatibus quos atque assumenda sunt at dolorum similique suscipit dolore beatae, maxime animi.</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-2">
-                <p></p>
-            </div>
-            <div class="col-10 subrow">
-                <img class="techlogo" src="pics/flask.svg" alt="Flask logo">
-                <h1>Flask</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem esse ab minus dolor maiores cumque nemo. Necessitatibus quos atque assumenda sunt at dolorum similique suscipit dolore beatae, maxime animi.</p>
-            </div>
-        </div>
-
-        <div class="row mainrow">
-            <div class="col">
-                <img class="techlogo" src="pics/sql.png" alt="SQL logo">
-                <h1>SQL</h1>
-                <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem esse ab minus dolor maiores cumque nemo. Necessitatibus quos atque assumenda sunt at dolorum similique suscipit dolore beatae, maxime animi.</p>
-            </div>
-        </div>
-
-        <div class="row mainrow">
-            <div class="col">
-                <h1>Other</h1>
-                <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem esse ab minus dolor maiores cumque nemo. Necessitatibus quos atque assumenda sunt at dolorum similique suscipit dolore beatae, maxime animi.</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-2">
-                <p></p>
-            </div>
-            <div class="col-10 subrow">
-                <img class="techlogo" src="pics/git.svg" alt="Github logo">
-                <h1>Github</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem esse ab minus dolor maiores cumque nemo. Necessitatibus quos atque assumenda sunt at dolorum similique suscipit dolore beatae, maxime animi.</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-2">
-                    <p></p>
-            </div>
-            <div class="col-10 subrow">
-                    <img class="techlogo" src="pics/raspi.png" alt="Rasperry Pi logo">
-                    <h1>Rasperri Pi</h1>
+            <div class="row">
+                <div class="col-2">
+                        
+                </div>
+                <div class="col-10 subrow">
+                    <img class="techlogo" src="pics/sass.svg" alt="SASS logo">
+                    <h1>SASS</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem esse ab minus dolor maiores cumque nemo. Necessitatibus quos atque assumenda sunt at dolorum similique suscipit dolore beatae, maxime animi.</p>
                 </div>
-        </div>
+            </div>
 
-        <div class="row mainrow">
-            <div class="col">
-                <h1>Coming Soon</h1>
-                <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem esse ab minus dolor maiores cumque nemo. Necessitatibus quos atque assumenda sunt at dolorum similique suscipit dolore beatae, maxime animi.</p>
+            <div class="row">
+                <div class="col-2">
+                        
+                </div>
+                <div class="col-10 subrow">
+                    <img class="techlogo" src="pics/boot.png" alt="Bootstrap logo">
+                    <h1>Bootstrap</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem esse ab minus dolor maiores cumque nemo. Necessitatibus quos atque assumenda sunt at dolorum similique suscipit dolore beatae, maxime animi.</p>
+                </div>
             </div>
         </div>
+        <div class="techgroup">
+            <div class="row mainrow">
+                <div class="col">
+                    <img class="techlogo" src="pics/js.svg" alt="Javascript logo">
+                    <h1>Javascript</h1>
+                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem esse ab minus dolor maiores cumque nemo. Necessitatibus quos atque assumenda sunt at dolorum similique suscipit dolore beatae, maxime animi.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    
+                </div>
+                <div class="col-10 subrow">
+                    <img class="techlogo" src="pics/jq.png" alt="J Query logo">
+                    <h1>jQuery</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem esse ab minus dolor maiores cumque nemo. Necessitatibus quos atque assumenda sunt at dolorum similique suscipit dolore beatae, maxime animi.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="techgroup">
+            <div class="row mainrow">
+                <div class="col">
+                    <img class="techlogo" src="pics/py.png " alt="Python logo">
+                    <h1>Python</h1>
+                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem esse ab minus dolor maiores cumque nemo. Necessitatibus quos atque assumenda sunt at dolorum similique suscipit dolore beatae, maxime animi.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    
+                </div>
+                <div class="col-10 subrow">
+                    <img class="techlogo" src="pics/flask.svg" alt="Flask logo">
+                    <h1>Flask</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem esse ab minus dolor maiores cumque nemo. Necessitatibus quos atque assumenda sunt at dolorum similique suscipit dolore beatae, maxime animi.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="techgroup">
+            <div class="row mainrow">
+                <div class="col">
+                    <img class="techlogo" src="pics/sql.png" alt="SQL logo">
+                    <h1>SQL</h1>
+                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem esse ab minus dolor maiores cumque nemo. Necessitatibus quos atque assumenda sunt at dolorum similique suscipit dolore beatae, maxime animi.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="techgroup">
+            <div class="row mainrow">
+                <div class="col">
+                    <h1>Other</h1>
+                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem esse ab minus dolor maiores cumque nemo. Necessitatibus quos atque assumenda sunt at dolorum similique suscipit dolore beatae, maxime animi.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    
+                </div>
+                <div class="col-10 subrow">
+                    <img class="techlogo" src="pics/git.svg" alt="Github logo">
+                    <h1>Github</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem esse ab minus dolor maiores cumque nemo. Necessitatibus quos atque assumenda sunt at dolorum similique suscipit dolore beatae, maxime animi.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                        
+                </div>
+                <div class="col-10 subrow">
+                        <img class="techlogo" src="pics/raspi.png" alt="Rasperry Pi logo">
+                        <h1>Rasperri Pi</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem esse ab minus dolor maiores cumque nemo. Necessitatibus quos atque assumenda sunt at dolorum similique suscipit dolore beatae, maxime animi.</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="techgroup">
+            <div class="row mainrow">
+                <div class="col">
+                    <h1>Coming Soon</h1>
+                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem esse ab minus dolor maiores cumque nemo. Necessitatibus quos atque assumenda sunt at dolorum similique suscipit dolore beatae, maxime animi.</p>
+                </div>
+            </div>
+        </div>
+    
+    
     </div>
 
+    <div class="footer bg-primary">
+        <p>&copy;Billy Cook, 2019</p>
+    </div>
 
 
 
