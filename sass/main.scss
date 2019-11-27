@@ -1,0 +1,16 @@
+.myLogo{
+    border-radius: 4rem;
+    height: 20vh;
+
+}
+.jumbotron{
+    min-height: 40vh;
+    text-align: center;
+}
+
+// can put this inside the above jumbotron with sass later
+.jumbotron img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
