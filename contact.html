@@ -10,23 +10,23 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
-            <a class="navbar-brand" href="index.html">BC logo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="myNav">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+        <a class="navbar-brand" href="index.html">BC logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <div class="jumbotron">
@@ -36,37 +36,39 @@
         <p class="jumbotext desc">Send me a message so we can work together.</p>
     </div>
 
-    <div class="container">
+    <div class="container contact-container">
         <form class="contactform">
             <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter Name">
+                <label class="label" for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter Name" required>
             </div>
             <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                <label class="label" for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
             </div>
             <div class="form-group">
-                <label for="phone">Phone Number</label>
+                <label class="label" for="phone">Phone Number</label>
                 <input type="tel" class="form-control" id="tel" placeholder="Enter phone number">
             </div>
-            <p>Please select timeframe your project needs to be complete by.</p>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="options" id="option1" value="option1">
-                <label class="form-check-label" for="option1">1-2 weeks</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="options" id="option2" value="option2">
-                <label class="form-check-label" for="option2">1-2 months</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="options" id="option2" value="option3" dsabled>
-                <label class="form-check-label" for="option2">No urgency</label>
-            </div>
+            <div class="radio-container">
+                <p class="label">Please select timeframe your project needs to be complete by.</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="options" id="option1" value="option1" required>
+                    <label class="form-check-label" for="option1">1-2 weeks</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="options" id="option2" value="option2">
+                    <label class="form-check-label" for="option2">1-2 months</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="options" id="option2" value="option3">
+                    <label class="form-check-label" for="option2">No urgency</label>
+                </div>
+            </div>     
             <div class="form-group">
-                <label for="details">Summarize what you are looking for.</label>
-                <input type="text" class="form-control" id="details" placeholder="I want to reinvent the wheel">
-            </div>            
+                <label class="label" for="details">Summarize what you are looking for.</label>
+                <input type="text" class="form-control" id="details" placeholder="I want to reinvent the wheel" required>
+            </div>      
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
