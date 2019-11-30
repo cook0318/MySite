@@ -5,6 +5,7 @@
 
 .jumbotron {
   min-height: 40vh;
+  max-height: 76vh;
   text-align: center;
   background-image: url(https://picsum.photos/id/434/1600/550);
 }
@@ -47,6 +48,18 @@
   text-shadow: 2px 3px 2px #4d4d4d;
 }
 
+.fadein {
+  animation: fadein 0.8s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .desc {
   font-size: 1.25rem;
 }

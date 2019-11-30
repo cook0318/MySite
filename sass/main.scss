@@ -5,6 +5,7 @@
 }
 .jumbotron{
     min-height: 40vh;
+    max-height: 76vh;
     text-align: center;
     background-image: url(https://picsum.photos/id/434/1600/550);
 }
@@ -15,6 +16,7 @@
     margin-left:auto;
     margin-right:auto;
 }
+
 .mainrow{
     background-color: hsl(240, 100%, 85%);
     border: 2px solid hsl(240, 100%, 50%);
@@ -43,6 +45,14 @@
     font-weight: 400;
     text-shadow: 2px 3px 2px hsl(0, 0%, 30%);
 }
+.fadein{
+    animation: fadein .8s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 .desc{
     font-size:1.25rem;
 }
@@ -68,6 +78,7 @@
 .card-img-bottom{
     width: 100%;
 }
+
 .javapic{
     height: 15rem;
 }
