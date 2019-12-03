@@ -1,3 +1,12 @@
+// color variables
+
+$grey: hsl(0, 0%, 66%);
+$lightgreen: hsl(80, 17%, 58%);
+$black: hsl(203, 24%, 7%);
+$green: hsl(120, 100%, 25%);
+$white: hsl(0, 0%, 100%);
+
+
 .myLogo{
     border-radius: 50%;
     height: 20vh;
@@ -18,15 +27,15 @@
 }
 
 .mainrow{
-    background-color: hsl(240, 100%, 85%);
-    border: 2px solid hsl(240, 100%, 50%);
+    background-color: lighten($green, 62%);
+    border: 2px solid $green;
     padding: 1rem;
     margin-bottom: 0.5rem;
     height: auto;
 }
 .subrow{
-    background-color: hsl(240, 100%, 95%);
-    border: 2px solid hsl(240, 100%, 70%);
+    background-color: lighten($green, 70%);
+    border: 2px solid $green;
     margin-bottom: 0.5rem;
     padding: 1rem;
 }
@@ -41,9 +50,9 @@
     margin-bottom: 2rem;
 }
 .jumbotext{
-    color: white;
+    color: $white;
     font-weight: 400;
-    text-shadow: 2px 3px 2px hsl(0, 0%, 30%);
+    text-shadow: 2px 3px 2px darken($grey, 30%);
 }
 .fadein{
     animation: fadein .8s;
@@ -56,14 +65,27 @@
 .desc{
     font-size:1.25rem;
 }
-
-.navbar-expand-sm .navbar-nav .nav-link{
-    padding-right: 5rem;
-    margin-left: 1rem;
+.navbar-brand{
+    border-left: 2px solid $black;
+    border-bottom: 2px solid $black;
+    padding-right: 1rem;
     padding-left: 1rem;
-    border-left: 2px solid black;
 }
 
+.navbar-expand-sm .navbar-nav .nav-link{
+    padding-right: 3rem;
+    margin-left: 0rem;
+    margin-right:1rem;
+    padding-left: 1rem;
+    border-left: 2px solid $black;
+    border-bottom: 2px solid $black;
+}
+.nav-link:hover, .navbar-brand:hover{
+    background-color: lighten($green, 5%);
+}
+.footer{
+    background-color: $green;
+}
 .footer p{
     padding:1rem;
     margin: 0rem;
@@ -102,5 +124,22 @@
     height: 10rem;
 }
 .card:hover{
-    box-shadow: 2px 2px 20px black;;
+    box-shadow: 2px 2px 20px $black;
+}
+
+.navbar{
+    background-color: $green;
+    opacity: 95%;
+}
+
+.btn{
+    background-color: lighten($green, 10%);
+}
+
+$pages: home, portfolio, contact;
+
+@each $pg in $pages{
+	body.#{$pg} li.#{$pg}.nav-item a{
+        color: hsla(0, 0%, 100%,1.0);
+    }
 }

@@ -17,16 +17,16 @@
 }
 
 .mainrow {
-  background-color: #b3b3ff;
-  border: 2px solid blue;
+  background-color: #bdffbd;
+  border: 2px solid green;
   padding: 1rem;
   margin-bottom: 0.5rem;
   height: auto;
 }
 
 .subrow {
-  background-color: #e6e6ff;
-  border: 2px solid #6666ff;
+  background-color: #e6ffe6;
+  border: 2px solid green;
   margin-bottom: 0.5rem;
   padding: 1rem;
 }
@@ -45,7 +45,7 @@
 .jumbotext {
   color: white;
   font-weight: 400;
-  text-shadow: 2px 3px 2px #4d4d4d;
+  text-shadow: 2px 3px 2px #5c5c5c;
 }
 
 .fadein {
@@ -64,11 +64,28 @@
   font-size: 1.25rem;
 }
 
-.navbar-expand-sm .navbar-nav .nav-link {
-  padding-right: 5rem;
-  margin-left: 1rem;
+.navbar-brand {
+  border-left: 2px solid #0e1316;
+  border-bottom: 2px solid #0e1316;
+  padding-right: 1rem;
   padding-left: 1rem;
-  border-left: 2px solid black;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+  padding-right: 3rem;
+  margin-left: 0rem;
+  margin-right: 1rem;
+  padding-left: 1rem;
+  border-left: 2px solid #0e1316;
+  border-bottom: 2px solid #0e1316;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+  background-color: #009900;
+}
+
+.footer {
+  background-color: green;
 }
 
 .footer p {
@@ -115,7 +132,28 @@
 }
 
 .card:hover {
-  box-shadow: 2px 2px 20px black;
+  box-shadow: 2px 2px 20px #0e1316;
+}
+
+.navbar {
+  background-color: green;
+  opacity: 95%;
+}
+
+.btn {
+  background-color: #00b300;
+}
+
+body.home li.home.nav-item a {
+  color: white;
+}
+
+body.portfolio li.portfolio.nav-item a {
+  color: white;
+}
+
+body.contact li.contact.nav-item a {
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
