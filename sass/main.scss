@@ -6,7 +6,7 @@ $black: hsl(203, 24%, 7%);
 $green: hsl(120, 100%, 25%);
 $white: hsl(0, 0%, 100%);
 
-
+// Styles common to all pages
 .myLogo{
     border-radius: 50%;
     height: 20vh;
@@ -17,15 +17,68 @@ $white: hsl(0, 0%, 100%);
     max-height: 76vh;
     text-align: center;
     background-image: url(https://picsum.photos/id/434/1600/550);
+    img{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+.jumbotext{
+    color: $white;
+    font-weight: 400;
+    text-shadow: 2px 3px 2px darken($grey, 30%);
+    padding-top: 1rem;
+}
+.fadein{
+    animation: fadein .8s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.desc{
+    font-size:1.25rem;
+}
+.footer{
+    background-color: $green;
+    p{
+        padding:1rem;
+        margin: 0rem;
+        text-align: right;
+    }
+}
+//Styles for Nav Bar
+.navbar{
+    background-color: $green;
+    opacity: 95%;
+}
+.navbar-brand{
+    border-left: 2px solid $black;
+    border-bottom: 2px solid $black;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.navbar-expand-sm .navbar-nav .nav-link{
+    padding-right: 3rem;
+    margin-left: 0rem;
+    margin-right:1rem;
+    padding-left: 1rem;
+    border-left: 2px solid $black;
+    border-bottom: 2px solid $black;
+}
+.nav-link:hover, .navbar-brand:hover{
+    background-color: lighten($green, 5%);
 }
 
-// can put this inside the above jumbotron with sass later
-.jumbotron img{
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
+$pages: home, portfolio, contact;
+
+@each $pg in $pages{
+	body.#{$pg} li.#{$pg}.nav-item a{
+        color: hsla(0, 0%, 100%,1.0);
+    }
 }
 
+// Styles for main page
 .mainrow{
     background-color: lighten($green, 62%);
     border: 2px solid $green;
@@ -45,65 +98,29 @@ $white: hsl(0, 0%, 100%);
     float: left;
     padding: 1rem 1rem 1rem;
 }
-
 .techgroup{
     margin-bottom: 2rem;
 }
-.jumbotext{
-    color: $white;
-    font-weight: 400;
-    text-shadow: 2px 3px 2px darken($grey, 30%);
-}
-.fadein{
-    animation: fadein .8s;
-}
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
 
-.desc{
-    font-size:1.25rem;
-}
-.navbar-brand{
-    border-left: 2px solid $black;
-    border-bottom: 2px solid $black;
-    padding-right: 1rem;
-    padding-left: 1rem;
-}
 
-.navbar-expand-sm .navbar-nav .nav-link{
-    padding-right: 3rem;
-    margin-left: 0rem;
-    margin-right:1rem;
-    padding-left: 1rem;
-    border-left: 2px solid $black;
-    border-bottom: 2px solid $black;
-}
-.nav-link:hover, .navbar-brand:hover{
-    background-color: lighten($green, 5%);
-}
-.footer{
-    background-color: $green;
-}
-.footer p{
-    padding:1rem;
-    margin: 0rem;
-    text-align: right;
-}
-
+// Styles for portfolio page
 .card{
     margin-bottom: 1rem;
-
 }
-
 .card-img-bottom{
     width: 100%;
 }
-
 .javapic{
     height: 15rem;
 }
+.github{
+    height: 10rem;
+}
+.card:hover{
+    box-shadow: 2px 2px 20px $black;
+}
+
+//Style for contact page
 .contactform{
     margin:2rem;
 }
@@ -113,33 +130,13 @@ $white: hsl(0, 0%, 100%);
 .radio-container{
     margin: 2rem 0rem;
 }
+.label{
+    font-weight:700;
+}
 .contact-container{
     width: 60%;
     min-width: 500px;
 }
-.label{
-    font-weight:700;
-}
-.github{
-    height: 10rem;
-}
-.card:hover{
-    box-shadow: 2px 2px 20px $black;
-}
-
-.navbar{
-    background-color: $green;
-    opacity: 95%;
-}
-
 .btn{
     background-color: lighten($green, 10%);
-}
-
-$pages: home, portfolio, contact;
-
-@each $pg in $pages{
-	body.#{$pg} li.#{$pg}.nav-item a{
-        color: hsla(0, 0%, 100%,1.0);
-    }
 }
