@@ -191,14 +191,9 @@ body.contact li.contact.nav-item a {
     min-width: 320px;
   }
 
-  .mainrow {
-    margin-left: 0.1rem;
-    margin-right: 0.1rem;
-  }
-
-  .subrow {
-    margin-right: 0.1rem;
-    margin-left: 2.3rem;
+  .techgroup {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 
