@@ -5,9 +5,9 @@
 
 .jumbotron {
   min-height: 40vh;
-  max-height: 76vh;
+  max-height: 77vh;
   text-align: center;
-  background-image: url("pics/background.jpg");
+  background-image: url(/pics/background.jpg);
 }
 .jumbotron img {
   display: block;
