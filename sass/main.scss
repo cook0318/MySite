@@ -151,7 +151,7 @@ $pages: home, portfolio, contact;
         width: auto;
         float: right;
     }
-    .display-1{
+    .display-2{
         font-size: 4rem;
     }
     .display-4{
@@ -160,7 +160,7 @@ $pages: home, portfolio, contact;
 
 }
 @media(max-width: 580px){
-    .display-1{
+    .display-2{
         display: none;
     }
     .myLogo{

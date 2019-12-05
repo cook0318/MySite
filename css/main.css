@@ -167,7 +167,7 @@ body.contact li.contact.nav-item a {
     float: right;
   }
 
-  .display-1 {
+  .display-2 {
     font-size: 4rem;
   }
 
@@ -176,7 +176,7 @@ body.contact li.contact.nav-item a {
   }
 }
 @media (max-width: 580px) {
-  .display-1 {
+  .display-2 {
     display: none;
   }
 
