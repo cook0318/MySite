@@ -5,7 +5,7 @@
 
 .jumbotron {
   min-height: 40vh;
-  max-height: 77vh;
+  max-height: 76vh;
   text-align: center;
 }
 .jumbotron img {
@@ -152,6 +152,35 @@ body.contact li.contact.nav-item a {
 
 .btn {
   background-color: #00b300;
+}
+
+@media (max-width: 545px) {
+  .mainrow, .subrow {
+    max-height: 27rem;
+  }
+
+  .techlogo {
+    height: 6rem;
+    width: auto;
+    float: right;
+  }
+
+  .display-1 {
+    font-size: 4rem;
+  }
+
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 580px) {
+  .display-1 {
+    display: none;
+  }
+
+  .myLogo {
+    margin-top: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

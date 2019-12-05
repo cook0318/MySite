@@ -14,7 +14,7 @@ $white: hsl(0, 0%, 100%);
 }
 .jumbotron{
     min-height: 40vh;
-    max-height: 77vh;
+    max-height: 76vh;
     text-align: center;
     img{
         display:block;
@@ -138,4 +138,30 @@ $pages: home, portfolio, contact;
 }
 .btn{
     background-color: lighten($green, 10%);
+}
+
+@media(max-width: 545px){
+    .mainrow, .subrow{
+        max-height: 27rem;
+    }
+    .techlogo{
+        height: 6rem;
+        width: auto;
+        float: right;
+    }
+    .display-1{
+        font-size: 4rem;
+    }
+    .display-4{
+        font-size: 3rem;
+    }
+
+}
+@media(max-width: 580px){
+    .display-1{
+        display: none;
+    }
+    .myLogo{
+        margin-top: 2.5rem;
+    }
 }
