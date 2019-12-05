@@ -8,6 +8,7 @@
   max-height: 76vh;
   text-align: center;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .jumbotron img {
   display: block;
