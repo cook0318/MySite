@@ -27,6 +27,7 @@ $white: hsl(0, 0%, 100%);
     font-weight: 400;
     text-shadow: 2px 3px 2px darken($grey, 30%);
     padding-top: 1rem;
+    background-repeat: no-repeat;
 }
 .fadein{
     animation: fadein .8s;
